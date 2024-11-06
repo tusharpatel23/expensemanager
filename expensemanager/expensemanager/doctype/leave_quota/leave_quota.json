@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{employee}-{leave_type}",
+ "creation": "2024-10-12 11:07:54.799881",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "leave_type",
+  "maximum_allowed",
+  "column_break_xvkv",
+  "leave_taken",
+  "leave_balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Select",
+   "label": "Leave Type",
+   "options": "Wellness Leave\nCasual Leave\nMaternity Leave"
+  },
+  {
+   "fieldname": "maximum_allowed",
+   "fieldtype": "Int",
+   "label": "Maximum Allowed"
+  },
+  {
+   "fieldname": "leave_taken",
+   "fieldtype": "Int",
+   "label": "Leave Taken"
+  },
+  {
+   "fieldname": "leave_balance",
+   "fieldtype": "Int",
+   "label": "Leave Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_xvkv",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-15 10:37:41.735705",
+ "modified_by": "Administrator",
+ "module": "ExpenseManager",
+ "name": "Leave Quota",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

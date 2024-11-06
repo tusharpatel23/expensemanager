@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-15 10:30:17.092317",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "wellness_leave_taken",
+  "wellness_leave_left",
+  "casual_leave_taken",
+  "casual_leave_left",
+  "maternity_leave_taken",
+  "maternity_leave_left"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "wellness_leave_taken",
+   "fieldtype": "Int",
+   "label": "Wellness Leave Taken",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wellness_leave_left",
+   "fieldtype": "Int",
+   "label": "Wellness Leave Left",
+   "read_only": 1
+  },
+  {
+   "fieldname": "casual_leave_taken",
+   "fieldtype": "Int",
+   "label": "Casual Leave Taken",
+   "read_only": 1
+  },
+  {
+   "fieldname": "casual_leave_left",
+   "fieldtype": "Int",
+   "label": "Casual Leave Left",
+   "read_only": 1
+  },
+  {
+   "fieldname": "maternity_leave_taken",
+   "fieldtype": "Int",
+   "label": "Maternity Leave Taken",
+   "read_only": 1
+  },
+  {
+   "fieldname": "maternity_leave_left",
+   "fieldtype": "Int",
+   "label": "Maternity Leave Left",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-15 10:34:28.016813",
+ "modified_by": "Administrator",
+ "module": "ExpenseManager",
+ "name": "Check",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
